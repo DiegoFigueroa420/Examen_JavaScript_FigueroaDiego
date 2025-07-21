@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="alertas"></div>
+    <div class="grid">
+        <form id="formulario-principal">
+            <h1>BucaraEmprende - Registrar Evento</h1>
+            <label for="NombreEvento">Nombre del Evento:</label>
+            <input type="text" id="NombreEvento" required>
+            
+            <label for="Fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="Fecha_inicio" required>
+            
+            <label for="Fecha_final">Fecha de Finalización:</label>
+            <input type="date" id="Fecha_final" required>
+            
+            <label for="horarios">Horarios:</label>
+            <input type="time" id="horarios" required>
+            
+            <button type="submit">Registrar Evento</button>
+        </form>
+
+
+        <form id="formulario-emprendimientos">
+            <h1>Registrar Emprendimiento</h1>
+            
+            <label for="NombreEmprendimiento">Nombre del Emprendimiento:</label>
+            <input type="text" id="NombreEmprendimiento" required>
+            
+            <label for="Categoria">Categoría:</label>
+            <input type="text" id="Categoria" required>
+            
+            <label for="Descripcion">Descripción:</label>
+            <textarea id="Descripcion" required></textarea>
+            
+            <label for="Enlace">Enlace a Red Social:</label>
+            <input type="url" id="Enlace" required>
+            
+            <h3>Producto o Servicio</h3>
+            <label for="text">Nombre del Producto/Servicio:</label>
+            <input type="text" id="ProductoNombre" required>
+            
+            <label for="ProductoPrecio">Precio:</label>
+            <input type="number" id="ProductoPrecio" required>
+            
+            <label for="ProductoDescripcion">Descripción:</label>
+            <textarea id="ProductoDescripcion" required></textarea>
+            
+            <label for="ProductoImagen">Imagen del Producto/Servicio:</label>
+            <input type="file" id="ProductoImagen" accept="image/*" required>
+            
+            <button type="submit">Registrar Emprendimiento</button>
+        </form>
+    </div>   
+
+    <div id="lista-eventos">
+        <h2>Eventos Registrados</h2>
+        <div id="lista-elementos"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
