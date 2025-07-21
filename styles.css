@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.alert{
+  background: #2f5269;
+  border: 1px solid black;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 12px;
+  color: whitesmoke;
+  z-index: 1;
+  align-items: center;
+}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(193, 209, 223);
+    padding: 20px;
+    display: grid;
+  }
+  
+  .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  h1, h2, h3 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    background: rgb(122, 158, 190);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 600px;
+  }
+  .evento-card{
+    background: rgb(122, 158, 190);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .emprendimiento-card{
+    background: rgb(122, 158, 190);
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  img {
+    align-items: center;
+    max-width: 400px;
+  }
+  form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+input{
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #2f5269;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #435f72;
+  }
+
+  
+  #lista-eventos {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #lista-eventos h2 {
+    margin-bottom: 20px;
+  }
+  
+  #lista-elementos .evento {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #02ff56;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  #lista-elementos .evento h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  #lista-elementos .evento p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+  }
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    display: block;
+  }
+  
+  .grid {
+    display: block;
+    align-items: center;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .evento-card, .emprendimiento-card {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .alert {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #lista-eventos {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  input, form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .evento-card, .emprendimiento-card {
+    width: 80%;
+  }
+}
